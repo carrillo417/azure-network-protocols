@@ -21,9 +21,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
+- Create a Windows virtual machine and a Linux virtual machine
+- Open Remote Desktop Connection on your PC
+  <img src="https://i.imgur.com/XfDNSei.png" height="90%" width="90%" alt=""/>
+
+- Connect to the Windows virtual machine using its public IP address
+<img src="https://i.imgur.com/in5a6K9.png" height="80%" width="80%" alt=""/>
 - Step 4
 
 <h2>Actions and Observations</h2>
