@@ -109,8 +109,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <img src="https://i.imgur.com/u1AFnHs.png" height="80%" width="80%" alt=""/>
 
+<h3>Observing RDP Traffic</h3>
 
+- Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
+- The traffic in Wireshark is non-stop due to the protocol constantly being used from one computer to another, so traffic is always being transmitted
 
+<img src="https://i.imgur.com/uHhp6kf.png" height="80%" width="80%" alt=""/>
 
 
 
