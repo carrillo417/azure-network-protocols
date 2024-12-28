@@ -102,6 +102,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   
 <img src="https://i.imgur.com/Ooc3Bdy.png" height="80%" width="80%" alt=""/>
 
+<h3> Observing DNS traffic </h3>
+
+- Back in Wireshark, filter for DNS traffic only
+- From the Windows VM, open Powershell and us nslookup, if we look up google.com and disney.com, we are able to see what their IP addresses are. We are also able to see what goes on in the background in Wireshark
+
+<img src="https://i.imgur.com/u1AFnHs.png" height="80%" width="80%" alt=""/>
+
+
 
 
 
