@@ -22,35 +22,43 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>High-Level Steps</h2>
 
 - Create a Windows virtual machine and a Linux virtual machine
-- Open Remote Desktop Connection on your PC
+- Open Remote Desktop Connection on your PC (if using MAC, install Microsoft Remote Desktop)
   <img src="https://i.imgur.com/XfDNSei.png" height="90%" width="90%" alt=""/>
 
 - Connect to the Windows virtual machine using its public IP address
 <img src="https://i.imgur.com/in5a6K9.png" height="80%" width="80%" alt=""/>
-- Step 4
+
+- Once connected to the Windows VM, download and install Wireshark
+  <img src="https://i.imgur.com/hCzQxcr.png" height="80%" width="80%" alt=""/>
+
 
 <h2>Actions and Observations</h2>
+<h3>Observing ICMP Traffic</h3>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+- Open Wireshark on your Windows VM and start packet capture
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<img src="https://i.imgur.com/hiAwWoZ.png" height="80%" width="80%" alt=""/>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<img src="https://i.imgur.com/TX9AK9M.png" height="80%" width="80%" alt=""/>
+
+- Within Wireshark filter for ICMP traffic only
+  
+<img src="https://i.imgur.com/Q9fZ7q4.png" height="80%" width="80%" alt=""/>
+
+- Retrieve the private IP address of the Linux VM and ping it from within the Windows VM
+  
+<img src="https://i.imgur.com/9QNqx3G.png" height="80%" width="80%" alt=""/>
+  
+  <img src="https://i.imgur.com/qvRnCVV.png" height="80%" width="80%" alt=""/>
+  
+- Observe ping requests and replies within Wireshark
+<img src="https://i.imgur.com/rM4omYU.png" height="80%" width="80%" alt=""/>
+
+- From the Windows VM open PowerShell or command line and ping a public website
+- Observe the traffic in Wireshark 
+
+<img src="https://i.imgur.com/sDDEDTr.png" height="80%" width="80%" alt=""/>
+
+
+
+
