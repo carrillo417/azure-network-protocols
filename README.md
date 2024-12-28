@@ -60,6 +60,28 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <img src="https://i.imgur.com/sDDEDTr.png" height="80%" width="80%" alt=""/>
 
+<h3> Configuring a Firewall (Network Security Group) </h3>
+
+- Initiate a perpetual/non-stop ping from your Windows VM to your Linux VM (Ex. <i>ping -t 10.0.0.0</i>)
+- Open the Network Security Group your Linux VM is using and disable incoming (inbound) ICMP traffic
+<img src="https://i.imgur.com/Oajm1uI.png" height="80%" width="80%" alt=""/>
+
+- Since creating the new rule, no traffic should be coming in so now we get the message "Request timed out"
+  
+<img src="https://i.imgur.com/PhWcTZA.png" height="80%" width="80%" alt=""/>
+
+- To change this back to normal, we can disable the rule or delete it
+
+<img src="https://i.imgur.com/D0HPmhZ.png" height="80%" width="80%" alt=""/>
+
+
+- It will take a while but after deleting the rule we are able to see the traffic again
+
+<img src="https://i.imgur.com/cpPpdvo.png" height="80%" width="80%" alt=""/>
+
+
+
+
 
 
 
