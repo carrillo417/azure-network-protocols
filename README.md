@@ -79,6 +79,19 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <img src="https://i.imgur.com/cpPpdvo.png" height="80%" width="80%" alt=""/>
 
+<h3>Observing SSH Traffic</h3>
+
+- On Wireshark, still running on the Windows VM. start up a packet capture and filter for SSH traffic only
+- From the Windows VM, login into the Linux VM using Powershell (ssh labuser@<private IP address)
+- Type in the Password and observe SSH traffic in Wireshark
+
+<img src="https://i.imgur.com/bmbIxHO.png" height="80%" width="80%" alt=""/>
+
+<img src="https://i.imgur.com/HcPPioK.png" height="80%" width="80%" alt=""/>
+
+
+
+
 
 
 
