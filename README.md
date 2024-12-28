@@ -89,6 +89,18 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <img src="https://i.imgur.com/HcPPioK.png" height="80%" width="80%" alt=""/>
 
+- Exit SSH connection by typing 'exit' and pressing Enter.
+
+<h3> Observing DHCP Traffic </h3>
+
+- Back in Wireshark filter for DHCP traffic only
+- From your Windows VM, attempt to issue your VM a new IP address. Open PowerShell as admin and run: ipconfig/renew
+
+<img src="https://i.imgur.com/pr2PS2a.png" height="80%" width="80%" alt=""/>
+
+- Observe the DHCP traffic appearing in Wireshark
+  
+<img src="https://i.imgur.com/Ooc3Bdy.png" height="80%" width="80%" alt=""/>
 
 
 
