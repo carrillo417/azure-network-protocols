@@ -23,7 +23,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create a Windows virtual machine and a Linux virtual machine
 - Open Remote Desktop Connection on your PC (if using MAC, install Microsoft Remote Desktop)
-  <img src="https://i.imgur.com/XfDNSei.png" height="90%" width="90%" alt=""/>
+  <img src="https://i.imgur.com/PsuX1OT.png" height="80%" width="80%" alt=""/>
+
 
 - Connect to the Windows virtual machine using its public IP address
 <img src="https://i.imgur.com/in5a6K9.png" height="80%" width="80%" alt=""/>
@@ -54,7 +55,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Observe ping requests and replies within Wireshark
 <img src="https://i.imgur.com/rM4omYU.png" height="80%" width="80%" alt=""/>
 
-- From the Windows VM open PowerShell or command line and ping a public website
+- From the Windows VM open PowerShell or command line and ping a public website. In this case, I used google.com
 - Observe the traffic in Wireshark 
 
 <img src="https://i.imgur.com/sDDEDTr.png" height="80%" width="80%" alt=""/>
