@@ -81,8 +81,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3>Observing SSH Traffic</h3>
 
-- On Wireshark, still running on the Windows VM. start up a packet capture and filter for SSH traffic only
-- From the Windows VM, login into the Linux VM using Powershell (ssh labuser@<private IP address)
+- On Wireshark, still running on the Windows VM, start up a packet capture and filter for SSH traffic only
+- From the Windows VM, login into the Linux VM using Powershell (ssh labuser@private IP address)
 - Type in the Password and observe SSH traffic in Wireshark
 
 <img src="https://i.imgur.com/bmbIxHO.png" height="80%" width="80%" alt=""/>
@@ -94,7 +94,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h3> Observing DHCP Traffic </h3>
 
 - Back in Wireshark filter for DHCP traffic only
-- From your Windows VM, attempt to issue your VM a new IP address. Open PowerShell as admin and run: ipconfig/renew
+- From your Windows VM, attempt to issue your VM a new IP address. Open PowerShell as admin and run: <i>ipconfig/renew</i>
 
 <img src="https://i.imgur.com/pr2PS2a.png" height="80%" width="80%" alt=""/>
 
